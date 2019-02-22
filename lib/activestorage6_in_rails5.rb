@@ -8,3 +8,7 @@ require_relative 'monkey_patches/activerecord/reflection.rb'
 require_relative 'core_ext/securerandom.rb'
 
 require "active_storage/engine"
+
+module ActiveStorage
+  autoload :Downloader
+end
